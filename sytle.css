@@ -7,10 +7,11 @@
 
 .header{
     width: 100%;
-    border: 1px solid rgb(95, 89, 89);
+    
 }
 
 .header__header{
+    border: 1px solid rgb(95, 89, 89);
     background-color: #fff;
     width: 1240px;
     height: 120px;
@@ -123,4 +124,10 @@
 .header__header-icon__icons:last-child{
     width: 42px;
     height: 42px;
+}
+
+/* header_nav */
+.header_nav__items{
+    display: flex;
+    justify-content: space-arounds;
 }
