@@ -1,0 +1,126 @@
+@import "reset.css";
+/* header */
+:root{
+    --border: border: 1px solid rgba(0, 0, 0, .2);
+    --main-red: #F43142;
+}
+
+.header{
+    width: 100%;
+    border: 1px solid rgb(95, 89, 89);
+}
+
+.header__header{
+    background-color: #fff;
+    width: 1240px;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* 햄버거 버튼 */
+
+.header__hambuger-btn{
+    border: var(--border);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 10%);
+    position: relative;
+}
+
+.header__hambuger-btn > img{
+    width: 23px;
+    height: 22px;
+    position: absolute;
+    right: 18px;
+    top: 18px;
+}
+
+/* 로고 */
+
+.header__logo{
+    width: 94px;
+    height: 40px;
+}
+
+/* 검색창 */
+
+.header__search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header__search-text{
+    width: 511px;
+    height: 51px;
+    background-color: #fafafa;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+
+.header__search-text:focus{
+    outline: none;
+}
+
+.header__search-text::placeholder{
+    text-indent: 20px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* 검색창 돋보기 아이콘 */
+
+.header__search-icon{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 6px;
+}
+
+/* 랭킹 메뉴 */
+
+.header__ranking-menu{
+    position: relative;
+}
+
+.header__ranking-menu__number{
+    font-style: italic;
+    font-weight: 600;
+    color: var(--main-red);
+}
+
+.header__ranking-menu__text{
+    font-weight: 600;
+    font-size: 14px;
+    margin-right: 52px;
+}
+
+.header__ranking-menu-icon{
+    width: 10px;
+    height: 5px;
+    position: absolute;
+    top: 6px;
+}
+
+/* 아이콘 메뉴 */
+
+.header__header-icon{
+    width: 254px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__header-icon__icons{
+    width: 33px;
+    height: 31px;
+}
+.header__header-icon__icons:last-child{
+    width: 42px;
+    height: 42px;
+}
