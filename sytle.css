@@ -7,7 +7,6 @@
 
 .header{
     width: 100%;
-    
 }
 
 .header__header{
@@ -127,7 +126,30 @@
 }
 
 /* header_nav */
-.header_nav__items{
-    display: flex;
-    justify-content: space-arounds;
+
+.header_nav{
+    width: 100%;
 }
+
+.header_nav__column{
+    width: 600px;
+    height: 66px;
+    position: relative;
+    margin: 0 20px;
+}
+
+.header_nav__item{
+    margin-right: 22px;
+    float: left;
+}
+.header_nav__item-img{
+    display: block;
+    overflow: hidden;
+    line-height: 200px;
+    background: no-repeat;
+    background-image: url(/img/header/shocking-deal.png);
+    width: 63px;
+    height: 65px;
+    background-size: 62px 22px;
+}
+
