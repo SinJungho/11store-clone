@@ -5,12 +5,21 @@
     --main-red: #F43142;
 }
 
+.skip{
+    position: absolute;
+    overflow: hidden;
+    /* clip: rect(0 0 0 0); */
+    margin: -1px;
+    width: 1px;
+    height: 1px;
+}
+
 .header{
     width: 100%;
 }
 
 .header__header{
-    border: 1px solid rgb(95, 89, 89);
+
     background-color: #fff;
     width: 1240px;
     height: 120px;
@@ -105,6 +114,7 @@
     height: 5px;
     position: absolute;
     top: 6px;
+    right: -5px;
 }
 
 /* 아이콘 메뉴 */
@@ -129,21 +139,43 @@
 
 .header_nav{
     width: 100%;
+    box-shadow: 3px 1px 2px 0px rgb(0, 0 ,0 , 10%);
+}
+
+.header_nav__liner{
+    border-top: 1px solid rgba( 238, 238, 238, 1);
+    width: 1240px;
+    margin: 0 auto;
+    height: 66px;
+    line-height: 66px;
+    
 }
 
 .header_nav__column{
-    width: 600px;
-    height: 66px;
     position: relative;
     margin: 0 20px;
+    /* display: flex;
+    align-items: center; */
+    float: left;
 }
 
 .header_nav__item{
     margin-right: 22px;
     float: left;
+    position: relative;
 }
+
+.header_nav__item:hover{
+    border-bottom: 2px solid var(--main-red);
+}
+
+.header_nav__item a{
+    text-decoration: none;
+    color: #000;
+}
+
 .header_nav__item-img{
-    display: block;
+    /* display: block; */
     overflow: hidden;
     line-height: 200px;
     background: no-repeat;
@@ -151,5 +183,51 @@
     width: 63px;
     height: 65px;
     background-size: 62px 22px;
+    position: absolute;
+    top: 24px;
+}
+
+.header_nav__column-etc{
+    display: flex;
+    /* align-items: center; */
+    float: right;
+    /* position: absolute; */
+}
+
+.header_nav__item_right{
+    margin: 0px 10px 0px 0px;
+}
+
+.header_nav__item_right:hover{
+    text-decoration: underline;
+}
+
+.header_nav__item_right a{
+    /* position: absolute; */
+    text-decoration: none;
+    color: #000;
+    border-right: 1px solid rgba( 238, 238, 238, 1);
+    padding-right: 10px;
+    height: 10px;
+}
+
+.header_nav__flag{
+    width: 100px;
+    height: 20px;
+    text-decoration: none;
+}
+
+.header_nav__flag img{
+    width: 20px;
+    height: 20px;
+}
+
+.haeder_nav__right-line{
+    border-right: 1px solid rgba( 238, 238, 238, 1);
+    height: 10px;
+}
+
+.silde{
+    display: flex;
 }
 
