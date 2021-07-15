@@ -3,110 +3,35 @@
 <head>
 <meta charset="UTF-8">
 <title>Slide</title>
-<!-- <style>
-  *{margin:0;padding:0;}
-  ul,li{list-style:none;}
-  .slide{height:150px;overflow:hidden;}
-  .slide ul{height:100%;}
-  .slide li{height:100%;}
-  .slide li:nth-child(1){background:#faa;}
-  .slide li:nth-child(2){background:#afa;}
-  .slide li:nth-child(3){background:#aaf;}
-  .slide li:nth-child(4){background:#faf;}
-</style>
 <script>
-const all = ele => document.querySelectorAll(ele)
-const one = ele => document.querySelector(ele)
-const slide = _ => {
-  const wrap = one('.slide') // .slide 선택
-  const target = wrap.children[0] // .slide ul 선택
-  const len = target.children.length // .slide li 갯수
-  // .slide ul의 너비 조정
-  target.style.cssText = `width:calc(100% * ${len});display:flex;transition:1s`
-  // .slide li의 너비 조정
-  Array.from(target.children)
-  .forEach(ele => ele.style.cssText = `width:calc(100% / ${len});`)
-  // 화면 전환 실행
-  let pos = 0
-  setInterval(() => {
-    pos = (pos + 1) % len // 장면 선택
-    target.style.marginLeft = `${-pos * 100}%`
-  }, 1500) // 1500 = 1500ms = 1.5sec. 즉, 1.5초 마다 실행
+  function navigo (){
+  const header = document.querySelector('header');
+  const headerheight = header.clientHeight;
+  document.addEventListener('scroll', onScroll, { passive: true });
+ function onScroll () {
+     const scrollposition = pageYOffset;
+   const nav = document.querySelector('nav');
+   if (headerheight<=scrollposition){
+     nav.classList.add('fix')
+   }
+   else {
+     nav.classList.remove('fix');
+   }
+ } 
+  
 }
-window.onload = function () {
-  slide()
-}
-</script> -->
+navigo()
+</script> 
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 <link rel="stylesheet" href="2.css">
-<script src="slide.js"></script>
 </head>
 <body>
-<!-- <div class="slide">
-  <ul>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-  </ul>
-</div>
-<div class="slide-btn">
-  <button><i class="fas fa-arrow-left"></i></button>
-  <button><i class="fas fa-arrow-right"></i></button>
-</div> -->
-<div class="slideshow-container">
-
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 6</div>
-    <img src="https://divisare-res.cloudinary.com/images/f_auto,q_auto,w_800/v1491425456/ltekybkstiyl7faumrsq/acne-studios-acne-studio-potsdamer-strasse.jpg" style="width:100%">
-    <div class="text">ACNE STUDIO</div>
+  <nav class="fix">네비게이션 메뉴</nav>
+  <div class="all">
+    <header>대충 상단</header>
+    <main>대충 본문</main>
+    <aside>대충 사이드바</aside>
+    <footer>대충 푸터</footer>
   </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 6</div>
-    <img src="https://divisare-res.cloudinary.com/images/f_auto,q_auto,w_800/v1491425435/hwxwxqxfwo4htfgqksbu/acne-studios-acne-studio-potsdamer-strasse.jpg" style="width:100%">
-    <div class="text">ACNE STUDIO</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 6</div>
-    <img src="https://divisare-res.cloudinary.com/images/f_auto,q_auto,w_800/v1491425448/rnelglmoujifzlbzykxw/acne-studios-acne-studio-potsdamer-strasse.jpg" style="width:100%">
-    <div class="text">ACNE STUDIO</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">4 / 6</div>
-    <img src="https://divisare-res.cloudinary.com/images/f_auto,q_auto,w_800/v1491425434/coct9kmra7uhmeu4cxto/acne-studios-acne-studio-potsdamer-strasse.jpg" style="width:100%">
-    <div class="text">ACNE STUDIO</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">5 / 6</div>
-    <img src="https://divisare-res.cloudinary.com/images/f_auto,q_auto,w_800/v1491425440/xacfj7abitmifeyciiia/acne-studios-acne-studio-potsdamer-strasse.jpg" style="width:100%">
-    <div class="text">ACNE STUDIO</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">6 / 6</div>
-    <img src="https://divisare-res.cloudinary.com/images/f_auto,q_auto,w_800/v1491425434/cqxjhpdmepxto0nudsok/acne-studios-acne-studio-potsdamer-strasse.jpg" style="width:100%">
-    <div class="text">ACNE STUDIO</div>
-  </div>
-
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="moveSlides(-1)">&#10094;</a>
-  <a class="next" onclick="moveSlides(1)">&#10095;</a>
-</div>
-<br/>
-
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(0)"></span>
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>
-  <span class="dot" onclick="currentSlide(5)"></span>
-</div>
 </body>
 </html>

@@ -10,122 +10,207 @@
     <script src="slide.js"></script>
 </head>
 <body>
-    <div class="header">
-        <div class="header__header">
-            <!-- 햄버거 버튼 -->
-            <div class="header__hambuger-btn">
-                <img src="img/header/bars.png" alt="bars">
+  <div class="header">
+    <div class="header__header fix">
+      <!-- 햄버거 버튼 -->
+      <div class="header__hambuger-btn">
+        <img src="img/header/bars.png" alt="bars">
+      </div>
+      <!-- 로고 -->
+      <img class="header__logo" src="img/header/logo.png" alt="logo">
+      <div>
+      <!-- 검색창 -->
+        <form class="header__search">
+          <input class="header__search-text" type="text" placeholder="검색할 상품을 입력해보세요." />
+      <!-- 돋보기 검색 아이콘 -->
+          <img class="header__search-icon" src="img/header/loupe_btn.png" alt="loupe">
+        </form>                
+      </div>
+      <!-- 랭킹 메뉴 -->
+      <div class="header__ranking-menu">
+        <span class="header__ranking-menu__number">1</span>
+        <span class="header__ranking-menu__text">창문로봇청소기</span>
+        <img class="header__ranking-menu-icon" src="img/header/arrow-down.png" alt="">
+      </div>
+      <!-- 아이콘 메뉴 -->
+      <div class="header__header-icon">
+          <img class="header__header-icon__icons" src="img/header/user-icon.png" alt="header-menu1">
+          <img class="header__header-icon__icons" src="img/header/truck.png" alt="header-menu2">
+          <img class="header__header-icon__icons" src="img/header/cart.png" alt="header-menu3">
+          <img class="header__header-icon__icons" src="img/header/clock.png" alt="header-menu4">
+      </div>
+      </div>
+      <div class="header_nav">
+        <div class="header_nav__liner">
+          <ul class="header_nav__column">
+            <li class="header_nav__item"><a href="#">베스트</a></li>
+            <li class="header_nav__item"><a href="#">쿠폰/혜택</a></li>
+            <li class="header_nav__item"><a href="#">기획전</a></li>              <li class="header_nav__item"><a href="#">장보기</a></li>
+            <li class="header_nav__item"><a href="#">T공식대리점</a></li>
+            <li class="header_nav__item"><a href="#" class="header_nav__item-img"><span>쇼킹딜</span></a></li>
+          </ul>
+          <ul class="header_nav__column-etc">
+            <li class="header_nav__item_right"><a href="#">로그인</a></li>
+            <li class="header_nav__item_right"><a href="#">회원가입</a></li>
+            <li class="header_nav__item_right"><a href="#">바로가기 OFF</a></li>
+            <div class="header_nav__flag">    
+              <a href="#">
+                <img src="img/header/usa-flag.png" alt="usa">
+              </a>
+              <a href="#">
+                <img src="img/header/china-flag.png" alt="chinese" />
+              </a>
             </div>
-            <!-- 로고 -->
-            <img class="header__logo" src="img/header/logo.png" alt="logo">
-            <div >
-                <!-- 검색창 -->
-                <form class="header__search">
-                    <input class="header__search-text" type="text" placeholder="검색할 상품을 입력해보세요." />
-                    <!-- 돋보기 검색 아이콘 -->
-                    <img class="header__search-icon" src="img/header/loupe_btn.png" alt="loupe">
-                </form>
-                
-            </div>
-            <!-- 랭킹 메뉴 -->
-            <div class="header__ranking-menu">
-                <span class="header__ranking-menu__number">1</span>
-                <span class="header__ranking-menu__text">창문로봇청소기</span>
-                <img class="header__ranking-menu-icon" src="img/header/arrow-down.png" alt="">
-            </div>
-            <!-- 아이콘 메뉴 -->
-            <div class="header__header-icon">
-                <img class="header__header-icon__icons" src="img/header/user-icon.png" alt="header-menu1">
-                <img class="header__header-icon__icons" src="img/header/truck.png" alt="header-menu2">
-                <img class="header__header-icon__icons" src="img/header/cart.png" alt="header-menu3">
-                <img class="header__header-icon__icons" src="img/header/clock.png" alt="header-menu4">
-            </div>
-        </div>
-        <div class="header_nav">
-            <div class="header_nav__liner">
-                <ul class="header_nav__column">
-                    <li class="header_nav__item"><a href="#">베스트</a></li>
-                    <li class="header_nav__item"><a href="#">쿠폰/혜택</a></li>
-                    <li class="header_nav__item"><a href="#">기획전</a></li>
-                    <li class="header_nav__item"><a href="#">장보기</a></li>
-                    <li class="header_nav__item"><a href="#">T공식대리점</a></li>
-                    <li class="header_nav__item"><a href="#" class="header_nav__item-img"><span>쇼킹딜</span></a></li>
-                    
-                </ul>
-                <ul class="header_nav__column-etc">
-                    <li class="header_nav__item_right"><a href="#">로그인</a></li>
-                    <li class="header_nav__item_right"><a href="#">회원가입</a></li>
-                    <li class="header_nav__item_right"><a href="#">바로가기 OFF</a></li>
-                    <div class="header_nav__flag">    
-                        <a href="#">
-                            <img src="img/header/usa-flag.png" alt="usa">
-                        </a>
-                        <a href="#">
-                            <img src="img/header/china-flag.png" alt="chinese" />
-                        </a>
-                    </div>
-                </ul>
-            </div>    
-        </div>
-    </div>
+          </ul>
+        </div>    
+      </div>
+  </div>
+  <div class="main">
     <div class="slideshow-container">
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="num_pos">
+            <div class="numbertext">1 / 6</div>
+        </div>
+        <img src="img/banner1.jpg" style="width:100%">    
+      </div>
 
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
+      <div class="mySlides fade">
         <div class="num_pos">
-          <div class="numbertext">1 / 6</div>
-        </div>
-          <img src="img/banner1.jpg" style="width:100%">    
-        </div>
-      
-        <div class="mySlides fade">
-        <div class="num_pos">
-            <div class="numbertext">2 / 6</div>
+          <div class="numbertext">2 / 6</div>
         </div>    
           <img src="img/banner2.jpg" style="width:100%">
-        </div>
-      
-        <div class="mySlides fade">
+      </div>
+        
+      <div class="mySlides fade">
         <div class="num_pos">
           <div class="numbertext">3 / 6</div>
         </div>
-          <img src="img/banner3.jpg" style="width:100%">
-        </div>
-      
-        <div class="mySlides fade">
+        <img src="img/banner3.jpg" style="width:100%">
+      </div>
+        
+      <div class="mySlides fade">
         <div class="num_pos">
           <div class="numbertext">4 / 6</div>
         </div>
-          <img src="img/banner4.jpg" style="width:100%">
-        </div>
-      
-        <div class="mySlides fade">
+        <img src="img/banner4.jpg" style="width:100%">
+      </div>
+        
+      <div class="mySlides fade">
         <div class="num_pos">
           <div class="numbertext">5 / 6</div>
         </div>
-          <img src="img/banner5.jpg" style="width:100%">
-        </div>
-      
-        <div class="mySlides fade">
+        <img src="img/banner5.jpg" style="width:100%">
+      </div>
+        
+      <div class="mySlides fade">
         <div class="num_pos">
           <div class="numbertext">6 / 6</div>
         </div>
-          <img src="img/banner6.jpg" style="width:100%">
+        <img src="img/banner6.jpg" style="width:100%">
+      </div>
+        
+          <!-- Next and previous buttons -->
+      <div class="btn">
+        <div class="slideshow-btn">
+          <div class="slideshow-btn-pos">
+            <a class="prev" onclick="moveSlides(-1)">&#10094;</a>
+            <a class="next" onclick="moveSlides(1)">&#10095;</a>
+          </div>  
         </div>
-      
-        <!-- Next and previous buttons -->
-        <div class="btn">
-            <div class="slideshow-btn">
-                <div class="slideshow-btn-pos">
-                    <a class="prev" onclick="moveSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="moveSlides(1)">&#10095;</a>
-                </div>  
-            </div>
-        </div>
-        <div class="puase">
-            <i class="fas fa-pause"></i>
-        </div>
+      </div>
+      <div class="puase">
+        <i class="fas fa-pause"></i>
+      </div>
     </div>
-    <br/>
+    <!-- main icon -->
+    <div class="main-icon">
+      <div class="main-icon__icons">
+        <div class="main-icon__icons-column">
+          <a href="#">
+            <img src="img/main/shocking-deal-icon.png" alt="">
+            <span>쇼킹딜</span>
+          </a>
+        </div>
+
+        <div class="main-icon__icons-column">
+          <a href="#">
+            <img src="img/main/t-register-icon.png" alt="t">
+            <span>공식대리점</span>
+          </a>
+        </div>
+
+        <div class="main-icon__icons-column">
+          <a href="#">
+            <img src="img/main/cart-icon.png" alt="cart">
+            <span>오늘장보기</span>
+          </a>
+        </div>
+
+        <div class="main-icon__icons-column">
+          <a href="#">
+            <img src="img/main/event-icon.png" alt="cart">
+            <span>기획전</span>
+          </a>
+        </div>
+
+        <div class="main-icon__icons-column">
+          <a href="#">
+            <img src="img/main/global-icon.png" alt="cart">
+            <span>해외직구</span>
+          </a>
+        </div>
+
+        <div class="main-icon__icons-column">
+          <a href="#">
+            <img src="img/main/trip-icon.png" alt="cart">
+            <span>여행</span>
+          </a>
+        </div>
+
+        <div class="main-icon__icons-column">
+          <a href="#">
+            <img src="img/main/tic-icon.png" alt="cart">
+            <span>티켓</span>
+          </a>
+        </div>
+
+        <div class="main-icon__icons-column">
+          <a href="#">
+            <img src="img/main/book-icon.png" alt="cart">
+            <span>도서</span>
+          </a>
+        </div>
+
+        <div class="main-icon__icons-column">
+          <a href="#">
+            <img src="img/main/car-icon.png" alt="cart">
+            <span>홈&카</span>
+          </a>
+        </div>
+
+        <div class="main-icon__icons-column">
+          <a href="#">
+            <img src="img/main/biness-icon.png" alt="cart">
+            <span>사업자전용선물</span>
+          </a>
+        </div>
+
+        <div class="main-icon__icons-column">
+          <a href="#">
+            <img src="img/main/trip-icon.png" alt="cart">
+            <span>더보기</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- 시선 집중 section -->
+    <div class="shop-focus">
+      <h4 class="shop-focus__title">시선집중</h4>
+      <div class="shop-focus__column">
+        1
+      </div>
+    </div>
+  </div>  
 </body>
 </html>
