@@ -86,6 +86,7 @@ body{
 
 .shop-focus__pos{
     display: flex;
+    position: relative;
 }
 
 .shop-focus__column{
@@ -95,6 +96,16 @@ body{
     margin: 25px 0px 0px 20px;
     border-radius: 10px;
     border: 1px solid rgba( 238, 238, 238, 1);
+    transition: 0.3 ease-in-out;
+}
+
+.shop-focus__column:hover{
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);
+    transition: 0.3s ease-in-out;
+}
+
+.shop-focus__column:last-child{
+    padding-right: 10px;
 }
 
 .shop-focus__column img{
@@ -157,15 +168,37 @@ body{
     margin-right: 10px;
 }
 
+.shop-focus__info-price .sale-solo{
+    color: var(--main-red);
+    position: relative;
+    display: inline;
+    margin-right: 20px;
+}
+
+.shop-focus__info-price .sale-no{
+    color: var(--main-red);
+    position: relative;
+    display: inline;
+    margin-right: 0;
+}
+
 .shop-focus__info-price .sale span:first-child{
     font-size: 25px;
 }
 
-.shop-focus__info-price .sale span:last-child{
+.shop-focus__info-price .sale .shop-focus__solo-unit{
     font-size: 14px;
     position: absolute;
     top: 3px;
     left: 28px;
+}
+
+.shop-focus__info-price .sale .shop-focus__solo-unit{
+    font-size: 14px;
+    position: absolute;
+    top: 3px;
+    left: 15px;
+    margin-right: 10px;
 }
 
 .shop-focus__info-price .price{
