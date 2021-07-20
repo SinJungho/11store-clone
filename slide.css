@@ -56,13 +56,19 @@
 
 /* Next & previous buttons */
 .btn{
-  display: flex;
+  position: absolute;
+  bottom: 28px;
+  right: 40px;
+}
+
+.see-focus__btn{
+  /* display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   position: absolute;
   bottom: 0px;
   right: 84px;
-  margin-bottom: 27px;
+  margin-bottom: 27px; */
 }
 
 .slideshow-btn{
@@ -89,7 +95,21 @@
 
 
 .shop-focus__prev,
-.shop-focus__next{
+.shop-focus__next {
+  position: absolute;  
+  top: 50%;
+  background: #fafafa;
+  color: #666;
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid rgba(0,0,0,0.3);
+  box-shadow: 0px 4px 16px -4px rgb(0 0 0 / 28%), 0px 0px 1px 0px rgb(0 0 0 / 45%);
+}
+
+.see-focus__prev, .see-focus__next{
   position: absolute;  
   top: 50%;
   background: #fafafa;
@@ -107,7 +127,15 @@
   left: 0%;
 }
 
+.see-focus__prev{
+  left: 0%;
+}
+
 .shop-focus__next{
+  right: 0%;
+}
+
+.see-focus__next{
   right: 0%;
 }
 

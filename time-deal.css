@@ -1,0 +1,130 @@
+/* time deal */
+.time-deal{
+    width: 1240px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.time-deal__header{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 1240px;
+    margin-top: 60px;
+    margin-bottom: 22px;
+}
+
+.time-deal__header-title{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.time-deal__header a{
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+.time-deal__header a span{
+    margin-left: 5px;
+}
+
+.time-deal__content img{
+    width: 610px;
+    height: 100%;
+    border-radius: 5px;
+    border: 1px solid rgb(194, 194, 194);
+}
+
+.time-deal__content-info{
+    height: 302px;
+    width: 605px;
+    border-top: 1px solid rgb(194, 194, 194);
+    border-bottom: 1px solid rgb(194, 194, 194);
+    display: inline-block;
+    float: right;
+}
+
+.time-deal__content-info__time{
+    margin-top: 43px;
+    color: var(--main-red);
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.time-deal__content-info__cupon{
+    margin-top: 27px;
+    margin-bottom: 10px;
+    width: 45px;
+    height: 23px;
+    line-height: 22px;
+    border: 1px solid rgba(100, 35, 255, .4);
+    background-color: #F9F6FF;
+    color: #6423FF;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.time-deal__content-info__price-info{
+    margin-top: 10px;
+}
+
+.time-deal__content-info__text{
+    padding-top: 2px; 
+    font-size: 18px;
+    font-weight: 400;
+    overflow: hidden;
+    max-height: 23px;
+    line-height: 20px;
+}
+
+.time-deal__content-info__text a{
+    text-decoration: none;
+    color: #000;
+}
+
+.time-deal__content-info__sale{
+    color: var(--main-red);
+    position: relative;
+    display: inline;
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.time-deal__content-info__price-pos{
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+    margin-bottom: 14px;
+}
+
+.time-deal__content-info__price{
+    display: inline;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.time-deal__content-info__price-regular{
+    font-size: 15px;
+    color: gray;
+    text-decoration: line-through;
+    display: inline;
+}
+
+.time-deal__content-info__option{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 52px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, .6);
+}
+
+.time-deal__content-info__product{
+    margin: 16px 0;
+    display: block;
+    color: rgba(0, 0, 0, .7);
+    font-size: 12px;
+}
+
