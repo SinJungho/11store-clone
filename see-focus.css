@@ -7,6 +7,7 @@
     background: #F6F7FB;
     width: 100%;
     box-sizing: border-box;
+    overflow: hidden;
     height: 990px;
     margin: 0 auto;
 }
@@ -216,3 +217,54 @@
     color: transparent;
 }
 
+/* banner */
+.see-focus__banner{
+    margin: 0 20px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.see-focus__banner-column__ele{
+    background-color: #A18770;
+    border-radius: 10px;
+    position: relative;
+    width: 606px;
+    height: 218px;
+}
+
+.see-focus__banner-column__ele a{
+    color: #fff;
+    margin-top: 55px;
+    margin-left: 42px;
+    margin-bottom: 29px;
+    position: absolute;
+    font-size: 24px;
+    /* position: relative; */
+    top: 0;
+}
+
+.see-focus__banner-column__ele span{
+    position: absolute;
+    margin-top: 99px;
+    margin-left: 42px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.see-focus__banner-column__ele img{
+    border-radius: 50%;
+    right: 0px;
+    top: 30px;
+    position: absolute;
+    margin-right: 42px;
+}
+
+.see-focus__banner-column:nth-child(2) img{
+    margin-left: 30px;
+}
+
+.see-focus__banner-big{
+    width: 100%;
+    margin-top: 50px;
+}

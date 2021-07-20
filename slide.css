@@ -127,12 +127,12 @@
   left: 0%;
 }
 
-.see-focus__prev{
-  left: 0%;
-}
-
 .shop-focus__next{
   right: 0%;
+}
+
+.see-focus__prev{
+  left: 0%;
 }
 
 .see-focus__next{
