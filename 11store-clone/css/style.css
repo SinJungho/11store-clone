@@ -1,0 +1,26 @@
+@import "reset.css";
+@import "header.css";
+@import "slide.css";
+@import "main-icon.css";
+@import "shop-focus_slide.css";
+@import "time-deal.css";
+@import "see-focus.css";
+/* header */
+:root{
+    --border: border: 1px solid rgba(0, 0, 0, .2);
+    --main-red: #F43142;
+}
+
+body{
+    height: 1000vh;
+}
+
+.skip{
+    position: absolute;
+    overflow: hidden;
+    /* clip: rect(0 0 0 0); */
+    margin: -1px;
+    width: 1px;
+    height: 1px;
+}
+
